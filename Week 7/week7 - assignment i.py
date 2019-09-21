@@ -6,7 +6,7 @@ a=[list(map(int,input().split())) for i in range(n)];
 for i in range(n):
   for j in range(n):
     end = '' if j == n-1 else ' ';
-    if(i<=j):
+    if(i>=j):                          #the assignment was to print the lower triangular matrix .'. i>=j
       print(a[i][j], end=end);
     else:
       print(0, end=end);
